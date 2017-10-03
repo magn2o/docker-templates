@@ -23,11 +23,11 @@
   <Environment></Environment>    
   <Branch>
     <Tag>debian</Tag>
-    <TagDescription>Debian</Tag>
+    <TagDescription>Debian</TagDescription>
   </Branch>
   <Branch>
     <Tag>alpine-3.6</Tag>
-    <TagDescription>Alpine</Tag>
+    <TagDescription>Alpine</TagDescription>
   </Branch>
   <Data>
     <Volume>
