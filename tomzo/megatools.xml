@@ -2,7 +2,7 @@
 <Containers>
 <Beta>False</Beta>
 <Category>Network:Server</Category>
-  <Name>sftp</Name>
+  <Name>megatools</Name>
   <Description>
   MEGA tools in docker
   </Description>
