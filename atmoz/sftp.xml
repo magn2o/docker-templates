@@ -21,6 +21,14 @@
     </Publish>
   </Networking>
   <Environment></Environment>    
+  <Branch>
+    <Tag>debian</Tag>
+    <TagDescription>Debian</Tag>
+  </Branch>
+  <Branch>
+    <Tag>alpine-3.6</Tag>
+    <TagDescription>Alpine</Tag>
+  </Branch>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/sftp</HostDir>
