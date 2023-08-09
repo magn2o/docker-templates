@@ -9,15 +9,16 @@
   <Overview>
   Blah
   </Overview>
-  <Support>https://github.com/konstantingoretzki/disposable-mailbox-docker</Support>
-  <GitHub>https://github.com/konstantingoretzki/disposable-mailbox-docker</GitHub>
+  <Support>https://github.com/synox/disposable-mailbox</Support>
+  <GitHub>https://github.com/synox/disposable-mailbox</GitHub>
+  <Repository>magn2o/disposable-mailbox</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8082</HostPort>
+        <HostPort>8081</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
