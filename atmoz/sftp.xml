@@ -29,8 +29,8 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/sftp</HostDir>
-      <ContainerDir>/var/run/sftp</ContainerDir>
-      <Mode>rw</Mode>
+      <ContainerDir>/etc/sftp</ContainerDir>
+      <Mode>ro</Mode>
     </Volume>
   </Data>
   <WebUI></WebUI>
