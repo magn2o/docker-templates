@@ -16,23 +16,20 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
-    <Mode>host</Mode>
-    <Publish>	  	  
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2222</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Environment></Environment>    
-  <Branch>
-    <Tag>debian</Tag>
-    <TagDescription>Debian</TagDescription>
-  </Branch>
-  <Branch>
-    <Tag>alpine-3.6</Tag>
-    <TagDescription>Alpine</TagDescription>
-  </Branch>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/sftp</HostDir>
-      <ContainerDir>/root/.sftp/</ContainerDir>
+      <ContainerDir>/var/run/sftp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
