@@ -18,7 +18,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8081</HostPort>
+        <HostPort>8889</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -27,8 +27,13 @@
   <Environment></Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/disposable-mailbox/src/config.php</HostDir>
+      <HostDir>/mnt/cache/appdata/disposable-mailbox/config.php</HostDir>
       <ContainerDir>/var/config.php</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/disposable-mailbox/nginx.php</HostDir>
+      <ContainerDir>/etc/nginx/conf/default.conf</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
