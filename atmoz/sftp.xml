@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>Network:Server</Category>
+  <Name>sftp</Name>
+  <Description>
+  Easy to use SFTP server
+  </Description>
+  <Overview>
+  Blah
+  </Overview>
+  <Support>https://github.com/atmoz/sftp</Support>
+  <Registry>https://registry.hub.docker.com/u/atmoz/sftp/</Registry>
+  <GitHub>https://github.com/atmoz/sftp</GitHub>
+  <Repository>atmoz/sftp</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>host</Mode>
+    <Publish>	  	  
+    </Publish>
+  </Networking>
+  <Environment></Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/sftp</HostDir>
+      <ContainerDir>/root/.sftp/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/atmoz/sftp/master/openssh.png</Icon>
+</Containers>
