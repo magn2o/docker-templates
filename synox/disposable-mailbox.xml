@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>Network:Server</Category>
+  <Name>disposble-mailbox</Name>
+  <Description>
+  A self-hosted disposable mailbox service (aka trash mail) using PHP.
+  </Description>
+  <Overview>
+  Blah
+  </Overview>
+  <Support>https://github.com/konstantingoretzki/disposable-mailbox-docker</Support>
+  <GitHub>https://github.com/konstantingoretzki/disposable-mailbox-docker</GitHub>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8082</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment></Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/disposable-mailbox/src/config.php</HostDir>
+      <ContainerDir>/var/config.php</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+</Containers>
